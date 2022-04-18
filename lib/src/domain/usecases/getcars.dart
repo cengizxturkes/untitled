@@ -16,7 +16,6 @@ class GetCars extends UseCase<List<Car>, void> {
         if (!_controller.isClosed) {
           _controller.add(cars);
         }
-        ;
       });
     } catch (e, st) {
       print(e);

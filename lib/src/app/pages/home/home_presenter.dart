@@ -11,6 +11,7 @@ class HomePresenter extends Presenter {
   final GetCars _getCars;
   HomePresenter(CarRepository _carRepository)
       : _getCars = GetCars(_carRepository);
+
   void getCars() {
     _getCars.execute(_GetCarsObserver(this));
   }
